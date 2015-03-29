@@ -20,3 +20,5 @@ I.e.: (1+f/100000)*(1+f/100000) rather than (1+f/100000)^2
 To Do:
 ------
 * Use octave's print ability to create a .png of the plots, if the user wants
+* Nichols graphing would be easier to find gain margin and phase margin visually: >nichols(A)
+However I was able to get GM and PM from the outputs on margin(A)
