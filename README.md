@@ -21,7 +21,6 @@ once they hit enter.
 Known issues:
 -------------
 Octave:
-* bode(), margin(), and other plots can't handle negative DC gain- it gets treated as positive. So unfortunately a high pass filter is limited to gain of 0 at DC rather than some value like -60dB.
 * sym2poly can't handle a function with a squared value, but it can do it without running in to the hardcoded coefficient limit if I write out the two poles rather than squaring them.
 I.e.: (1+f/100000)*(1+f/100000) rather than (1+f/100000)^2
 * The transfer.sh script exits and leaves the user in octave, but that's required to let the user save the graph if they want to. How to exit automatically while still allowing the graph to be saved?
