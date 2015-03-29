@@ -6,8 +6,6 @@ This program will let a user graph the Bode plot and phase angle of a transfer f
 
 First the user will construct a transfer function by specifying the number of zeros, number of poles, and DC gain. Then they specify each frequency f1, f2, and so on.
 
-I'm going to start by making a Python program that can do things normally and save the confinement to a terminal window as a later goal. 
-
 http://web.mit.edu/6.302/www/compare/report.html
 https://en.wikibooks.org/wiki/Control_Systems/Transfer_Functions
 http://octave.sourceforge.net/control/overview.html#PolePlacement
@@ -22,7 +20,6 @@ I.e.: (1+f/100000)*(1+f/100000) rather than (1+f/100000)^2
 
 To Do:
 ------
-* Find the maximum value of beta for stability by taking A(f180)^-1
 * How can I take in user input at the command line (via transfer.sh) and pass it to transfer.m?
 Octave can take input as input("blah blah") but how can it receive input at the command line?
 * Use octave's print ability to create a .png of the plots, if the user wants
