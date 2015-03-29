@@ -13,6 +13,10 @@ http://web.mit.edu/6.302/www/compare/report.html
 Known issues:
 -------------
 Octave:
-* % Known issues: sym2poly can't handle a function with a squared value, but it can do it without 
-% running in to the coefficient limit if I write out the two poles rather than squaring them.
-% I.e.: (1+f/100000)*(1+f/100000) rather than (1+f/100000)^2
+* Known issues: sym2poly can't handle a function with a squared value, but it can do it without 
+running in to the coefficient limit if I write out the two poles rather than squaring them.
+I.e.: (1+f/100000)*(1+f/100000) rather than (1+f/100000)^2
+
+To Do:
+------
+* Use octave's print ability to create a .png of the plots, if the user wants
