@@ -22,6 +22,9 @@ I.e.: (1+f/100000)*(1+f/100000) rather than (1+f/100000)^2
 
 To Do:
 ------
+* Find the maximum value of beta for stability by taking A(f180)^-1
+* How can I take in user input at the command line (via transfer.sh) and pass it to transfer.m?
+Octave can take input as input("blah blah") but how can it receive input at the command line?
 * Use octave's print ability to create a .png of the plots, if the user wants
 * Nichols graphing would be easier to find gain margin and phase margin visually: >nichols(A)
 However I was able to get GM and PM from the outputs on margin(A)
