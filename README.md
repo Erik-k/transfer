@@ -11,7 +11,7 @@ I'm going to start by making a Python program that can do things normally and sa
 http://web.mit.edu/6.302/www/compare/report.html
 https://en.wikibooks.org/wiki/Control_Systems/Transfer_Functions
 http://octave.sourceforge.net/control/overview.html#PolePlacement
-=======
+
 
 Known issues:
 -------------
