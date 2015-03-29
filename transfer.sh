@@ -19,4 +19,4 @@ then
 fi
 
 echo "Hit <enter> in the terminal to exit."
-octave -q transfer.m
+octave -q --persist transfer.m
