@@ -8,3 +8,5 @@ First the user will construct a transfer function by specifying the number of ze
 I'm going to start by making a Python program that can do things normally and save the confinement to a terminal window as a later goal. 
 
 http://web.mit.edu/6.302/www/compare/report.html
+https://en.wikibooks.org/wiki/Control_Systems/Transfer_Functions
+http://octave.sourceforge.net/control/overview.html#PolePlacement
