@@ -8,7 +8,7 @@ hash octave 2>/dev/null || { echo >&2 "Need octave but it's not installed.  Abor
 mytest=$(octave -q --eval "pkg list" | grep -q control)
 if [ $? -ne 0 ]; then #try to install
 	echo "attempting to install octave-control"
-    octave -q --eval "pkg install -forge control"
+    octave -q --eval "pkg install -verbose -forge control"
     if [ $? -ne 0 ]; then
         echo "I do not find octave-control. I was unable to install automatically."
         echo "please ensure you have the following installed:"
@@ -22,7 +22,7 @@ fi
 mytest=$(octave -q --eval "pkg list" | grep -q symbolic)
 if [ $? -ne 0 ]; then
 	echo "attempting to install octave-symbolic"
-    octave -q --eval "pkg install -forge symbolic"
+    octave -q --eval "pkg install -verbose -forge symbolic"
     if [ $? -ne 0 ]; then
     echo "I was not able to auto-install octave-symbolic."
 	echo >&2 " octave-symbolic package is not installed! Aborting."
