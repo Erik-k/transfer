@@ -8,7 +8,7 @@
 
 function values = transfermenu
 	values = struct("DC", [], "zeros", [], "poles", []);
-	while (choice = menu("Menu with sub inputs", "Input DC gain", "Input zeros", "Input poles", "Finished"))
+	while (choice = menu("Choose Option:", "Input DC gain", "Input zeros", "Input poles", "Finished"))
 		if (choice == 1)
 			A0 = input("Enter DC gain as one number: ")
 			values.DC(1) = A0;
