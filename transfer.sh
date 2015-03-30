@@ -27,6 +27,7 @@ if [ $? -ne 0 ]; then
     echo "I was not able to auto-install octave-symbolic."
 	echo >&2 " octave-symbolic package is not installed! Aborting."
 	exit 1
+    fi
 fi
 
 echo "Hit <enter> in the terminal to exit."
