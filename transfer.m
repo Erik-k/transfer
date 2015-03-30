@@ -1,5 +1,7 @@
 %transfer.m
 
+pkg load symbolic
+pkg load control
 clear all;
 f = sym('f');
 
@@ -93,18 +95,13 @@ maxfreq = max(polesmax, zerosmax);
 freq_range = {1 maxfreq*1000};
 chosenplot = plotchoice;
 figure('Position', [10, 10, 1200, 800]);
-if (chosenplot == 1)
-	bode(A, freq_range, "o");
-elseif (chosenplot == 2)
-	pzmap(A);
-elseif (chosenplot == 3)
-	margin(A);
-elseif (chosenplot == 4)
-	nyquist(A);
-elseif (chosenplot == 5)
-	nichols(A);
-else
-	disp("Choice unrecognized!")
-endif
+switch chosenplot 
+    case 1, bode(A, freq_range, "o");
+    case 2,	pzmap(A);
+    case 3,	margin(A);
+    case 4, nyquist(A);
+    case 5,	nichols(A);
+    otherwise disp("Choice unrecognized!")
+endswitch
 
 %pause() %one can also call the script from bash with $octave --persist to make it hang around
