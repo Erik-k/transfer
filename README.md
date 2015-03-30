@@ -13,9 +13,14 @@ If you're in octave already and you've got the two packages installed, you can j
 >source('transfer.m')
 Make sure transfer.m and transfermenu.m are in the same folder!
 
-Otherwise transfer.sh is a wrapper that checks for the needed dependencies (octave, octave-control, 
-octave-symbolic) and then runs transfer.m in octave, but keeps the user in the command line environment
-once they hit enter.
+You will then go through two menus, the first of which lets you build a transfer function by specifying the DC gain as a scalar,
+and the zeros and poles as a vector. For example, for the function:
+A(s) = 1000(1+s/200)/[(1+s/10000)*(1+s/30000)] 
+you would enter 1000 for the DC gain, [200] for the zeros, and [10000 30000] for the poles.
+
+transfer.sh is a wrapper that checks for the needed dependencies (octave, octave-control, 
+octave-symbolic) and then runs transfer.m in octave. 
+
 
 
 Known issues:
