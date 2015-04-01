@@ -34,7 +34,8 @@ To Do:
 ------
 * How can I take in user input at the command line (via transfer.sh) and pass it to transfer.m?
 Octave can take input as input("blah blah") but how can it receive input at the command line? This would enable automated testing of large ranges of values.
-* Find out how ASCII plots are chosen and add ability to force that mode.
+* Find out how ASCII plots are chosen and add ability to force that mode. It uses putenv('GNUTERM','dumb') but that only works sporadically.
+
 
 References:
 -----------
