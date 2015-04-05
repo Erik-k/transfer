@@ -26,6 +26,7 @@ octave-symbolic) and then runs transfer.m in octave.
 Known issues:
 -------------
 Octave:
+* The plotting functions, such as bode(A) and nyquist(A) all treat negative DC gain as positive. They don't allow making an amp with attenuation at DC or low frequencies
 * sym2poly can't handle a function with a squared value, but it can do it without running in to the hardcoded coefficient limit if I write out the two poles rather than squaring them.
 I.e.: (1+f/100000)*(1+f/100000) rather than (1+f/100000)^2
 * The transfer.sh script exits and leaves the user in octave, but that's required to let the user save the graph if they want to. How to exit automatically while still allowing the graph to be saved?
